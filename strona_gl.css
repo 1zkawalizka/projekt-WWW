@@ -1,0 +1,142 @@
+body {
+    background-color:#D9D9D9;
+    color: black;
+    font-size: medium;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.guziki {
+    margin-left: auto;
+    display: flex;
+    align-items:center;
+    gap: 10px;
+    justify-content: flex-end;
+    width: 150px;
+    height: 40px;
+    padding: auto;
+    font-size: small;
+  }
+
+.oferty {
+    display: flex;
+    justify-content: center;
+    flex-grow:1;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.oferty li {
+    padding: 10px 20px;  
+    text-align: center;
+}
+header{
+    border-bottom: 3px solid #000;
+    padding: 0 15px;
+    display: flex;
+    background-color: #D9D9D9;
+    justify-content: space-between;
+    align-items: center;  
+}
+.etykieta {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    margin:15px;
+}
+
+.czesc_2
+{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+    margin:15px;
+}
+
+.calosc{
+    border-bottom:3px solid #000;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    padding:25px
+    
+}
+
+div{
+    unicode-bidi: isolate;
+}
+.guziki input {
+border:1px solid#000;
+cursor: pointer;
+border-radius: 5px;
+color:#000;
+background-color: white;
+}
+
+h3,h4,p{
+    padding: 5px 5px;
+    margin:0;
+}
+
+figcaption{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    padding: 5px 5px;
+}
+.ramka{
+background-color: rgba(119, 153, 171, 0.699);
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+padding:20px 20px;
+font-size: large;
+margin-left: 30px;
+margin-right: 30px;
+margin-top: 15px;
+}
+
+.ramka label{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    padding: auto;
+}
+input[type="email"]
+{
+border-radius: 0;
+background-color: white;
+border:3px solid #000;
+width:300px;
+height: 40px;
+padding: 5px;
+font-size: medium;
+}
+
+input[type="button"]
+{
+    border-radius: 5px;
+    background-color: white;
+    border:3px solid  #000;
+    cursor: pointer;
+  width: 150px;
+  height: 40px;
+  font-size: 20px;
+ 
+}
+
+.zdjecia{
+    display:flex;
+    justify-content: space-evenly;
+    gap:10px;
+    margin-top:10px;
+}
+
+.zdjecia img{
+    width:30px;
+    height:30px;
+}
