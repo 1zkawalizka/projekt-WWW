@@ -1,4 +1,2 @@
 # projekt-WWW
-co zawiera projekt?
-czesc projektu zawiera informacje o ofercie naszego studenckiego biura podrozy.
-Sa tam zawarte informacje o eurotripie- caly, szczegolowy plan podrozy. 
+storna_gl.css to jest dobry plik reszte trzeba usunac , jezeli chodzi o css
