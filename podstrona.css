@@ -1,0 +1,57 @@
+body {
+    background-color:#D9D9D9;
+    color: black;
+    font-size: medium;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header{
+    justify-content: center;
+    border-bottom:1px solid #000;
+}
+.rzym
+{
+border-top:1px solid #000; ;
+}
+
+.portugalia{
+border-top:1px solid #000;
+border-bottom:1px solid #331e1e;
+}
+
+.barcelona{
+border-top: 1px solid #000;;
+}
+
+.ramka{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:0 15px;
+}
+
+input[type="button"]
+{
+    border-radius: 5px;
+    background-color: white;
+    border:3px solid  #000;
+    cursor: pointer;
+  width: 100px;
+  height: 25px;
+  font-size: 15px;
+}
+
+input[type="email"]
+{
+    width:300px;
+    height: 40px;
+    padding: 10px;
+    font-size: medium;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+}
+figcaption{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    color:gray;
+}
