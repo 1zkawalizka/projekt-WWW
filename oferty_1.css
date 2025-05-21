@@ -9,53 +9,102 @@ header {
     display: flex;
     justify-content: center;
     border-bottom: 1px solid #000;
-    text-align: center
+    text-align: center;
+    padding: 10px;
+}
+
+.guzik:hover {
+    background-color: #299a1e4b;
+    color: white;
 }
 
 
-.container{
-    display:flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    align-items: flex-start;
-    flex-wrap:wrap;
+.slider-items::-webkit-scrollbar {
+    display: none;
+}
+
+
+.slider-items {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    max-width: 100%; 
+    height: auto;
+}
+
+.slider-item {
+    max-width: 100%;
+    height: auto;
+    scroll-snap-align: start;
+}
+
+
+.slider-navigation {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding-bottom: 0.5rem;
+}
+
+.slider-navigation a {
+    text-decoration: none;
+}
+
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; 
     gap: 10px;
     margin: 20px;
 }
-.oferta1 {
+
+
+.oferta1, .oferta2, .oferta3 {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start; 
+    justify-content: space-between;
     flex-wrap: wrap;
-    justify-content: flex-start;
-  
     background: white;
     border: 1px solid #ccc;
-    width: 30%; 
+    max-width: 30%;
     padding: 15px;
+    min-height: 450px;
 }
 
-.oferta2 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
 
-    background: white;
-    border: 1px solid #ccc;
-    width: 30%; 
-    padding: 15px;
+.slider-items img {
+    width: 100%; 
+    object-fit: cover; 
+    max-height: 250px; 
+     aspect-ratio: 16/9;
 }
 
-.oferta3 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    flex-wrap: wrap;
-    justify-content: flex-end;
 
-    background: white;
-    border: 1px solid #ccc;
-    width: 30%; 
-    padding: 15px;
+
+@media screen and (max-width: 1024px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .oferta1, .oferta2, .oferta3 {
+        max-width: 80%; 
+    }
+
+    .slider-items {
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .oferta1, .oferta2, .oferta3 {
+        max-width: 100%;
+    }
+
+    .slider-navigation {
+        gap: 5px;
+    }
 }
