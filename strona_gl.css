@@ -10,35 +10,43 @@ header {
     justify-content: space-between;
     align-items: center;
     border-bottom: 3px solid #000;
-    padding: 0 15px;
-    background-color: #D9D9D9;
+    padding: 15px;
+    background-color: transparent;
 }
 
 .guziki {
     display: flex;
+    gap: 10px;
+    justify-content: center;
     align-items: center;
-    gap: 5px;
-    justify-content: flex-end;
-    width: auto;
-    height: auto;
-    flex-wrap: nowrap;
 }
 
 .guziki input {
-    width: 120px;
-    height: 35px;
-    font-size: 12px;
+    width: 140px;
+    height: 40px;
+    font-size: 16px;
     padding: 5px;
+    background-color: white;
+    border: 2px solid #000;
+    cursor: pointer;
+    border-radius: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
+.guziki input:hover {
+    background-color: #ccc;
+    transform: scale(1.05);
+}
 
 .oferty {
     display: flex;
     justify-content: center;
-    flex-grow: 1;
-    padding: 0;
-    margin: 0;
     list-style: none;
+    padding: 0;
 }
 
 .oferty li {
@@ -60,15 +68,9 @@ header {
 .etykieta, .czesc_2 {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
     align-items: center;
-    justify-content: center;
     width: 45%;
     text-align: center;
-}
-
-div {
-    unicode-bidi: isolate;
 }
 
 h3, h4, p {
@@ -77,8 +79,7 @@ h3, h4, p {
 }
 
 .ramka {
-   
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Gill Sans', Calibri, sans-serif;
     padding: 20px;
     font-size: large;
     max-width: 800px;
@@ -86,18 +87,17 @@ h3, h4, p {
     text-align: center;
 }
 
-
 .ramka label {
     display: block;
     margin-bottom: 10px;
 }
 
 input[type="email"], input[type="button"] {
-    width: 100%;
     max-width: 300px;
     height: 40px;
     font-size: medium;
 }
+
 input[type="button"] {
     border-radius: 5px;
     background-color: grey;
@@ -117,7 +117,6 @@ input[type="button"]:hover {
     transform: scale(1.05);
 }
 
-
 .zdjecia {
     display: flex;
     justify-content: space-evenly;
@@ -130,7 +129,6 @@ input[type="button"]:hover {
     height: 30px;
 }
 
-
 @media screen and (max-width: 1024px) {
     .container {
         flex-direction: column;
@@ -139,10 +137,6 @@ input[type="button"]:hover {
 
     .oferta1, .oferta2, .oferta3 {
         max-width: 80%;
-    }
-
-    .slider-items {
-        max-width: 100%;
     }
 }
 
@@ -154,4 +148,95 @@ input[type="button"]:hover {
     .slider-navigation {
         gap: 5px;
     }
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #222;
+        color: white;
+    }
+
+    .oferta1, .oferta2, .oferta3 {
+        background: #333;
+        border: 1px solid #666;
+    }
+
+    header {
+        border-bottom: 1px solid white;
+        color: white;
+    }
+
+    .guzik:hover {
+        background-color: #444;
+        color: white;
+    }
+
+    #middle-header ul > li > a {
+        color: white;
+    }
+
+    #middle-header ul > li:hover > a {
+        color: #cfcfcf;
+    }
+
+    #middle-header ul > li > ul {
+        background-color: #444;
+    }
+
+    #middle-header ul > li > ul > li a {
+        color: white;
+    }
+
+    #middle-header ul > li > ul > li:hover a {
+        color: #cfcfcf;
+    }
+}
+
+#middle-header ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#middle-header ul > li {
+    position: relative;
+}
+
+#middle-header ul > li > a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+    transition: color 0.3s ease;
+}
+
+#middle-header ul > li:hover > a {
+    color: rgb(41, 45, 46);
+}
+
+#middle-header ul > li > ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #EEE;
+    min-width: 150px;
+}
+
+#middle-header ul > li:hover > ul {
+    display: block;
+}
+
+#middle-header ul > li > ul > li {
+    background-color: #EEE;
+}
+
+#middle-header ul > li > ul > li a {
+    color: black;
+}
+
+#middle-header ul > li > ul > li:hover a {
+    color: rgb(41, 45, 46);
 }
