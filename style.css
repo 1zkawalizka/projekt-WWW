@@ -370,26 +370,48 @@ hr{
         background-color: #212121;
         color: #ffffffef;
     }
-    header{
+
+    header {
         background-color: #212121;
     }
-    #inner-contact-container{
+
+    #inner-contact-container {
         background-color: #444444;
     }
-    .menu-anchor{
+
+    .menu-anchor {
         color: #FFFFFF;
     }
 
     .left-button,
-    .right-button{
+    .right-button {
         background-color: #444444;
     }
 
-    .contact-form-input{
+    .contact-form-input {
         background-color: #363232;
         color: white;
     }
-  }
+
+    #offers-odnosnik {
+        color: grey;
+    }
+
+    .menu-anchor {
+        background-color: #212121;
+    }
+
+    #middle-header ul > li > a {
+        display: block;
+        padding: 10px;
+        text-decoration: none;
+        color: white;
+    }
+
+    #middle-header ul{
+        background-color: #212121;
+    }
+}
 
 #search{
     width: 200px;
