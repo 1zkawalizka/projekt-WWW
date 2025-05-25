@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="pl-Pl">
 
@@ -85,15 +86,17 @@
 </ul>
 </div>
 
-<div class="ramka">
-    <figcaption>
-        <form action="studenckiewyjazdy@gmail.com" method="post">
-            <label for="email"><h3>Zostaw nam swojego maila , a my przeslemy ci dokladna wycene i wolne terminy</h3></label><br>
-            <input type="email" id="email" placeholder="Podaj swój adres email " required>
-            <input type="button" value="Submit">
-        </form>
-    </figcaption>
-</div>
+    <div class="ramka">
+        <figcaption>
+            <form id="contactForm">
+                <label for="email"><h3>Zostaw nam swojego maila, a my przygotujemy ofertę!</h3></label><br>
+                <input type="email" id="email" placeholder="Podaj swój adres email" required>
+                <button type="button" id="submitButton">Submit</button>
+                <p id="status" style="display: none; font-weight: bold;"></p>
+            </form>
+        </figcaption>
+    </div>
+    <script src="script.js"></script>
 </body>
 
 </html>
