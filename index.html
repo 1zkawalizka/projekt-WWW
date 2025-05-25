@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Podroze</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+<header>
+    <div id="left-header">
+        <img src="img/logo.jpg" alt="logo" class="header-logo">
+    </div>
+
+    <div id="middle-header">
+        <ul>
+            <li class="menu-kierunki">
+                <a href="kierunki.html" class="menu-anchor">Kierunki</a>
+            </li>
+            <li class="menu-o-nas">
+                <a href="onas.html" class="menu-anchor">O nas</a>
+            </li>
+            <li>
+                <a href="strona_glowna.html" class="menu-anchor">Kontakt</a>
+            </li>
+            <li>
+                <a href="oferty.html" class="menu-anchor">Oferta 🡣</a>
+                <ul>
+                    <li><a href="#">Chorwacja</a></li>
+                    <li><a href="#">Hiszpania</a></li>
+                    <li><a href="#">Wenezuela</a></li>
+                    <li><a href="#">Meow</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <div id="right-header">
+        <a href="login.html" class="header-button-anchor left-button">Zaloguj</a>
+        <a href="register.html" class="header-button-anchor right-button">Zarejestruj</a>
+    </div>
+</header>
+<hr>
+<main>
+    <div id="main-left">
+        <h1>
+            Jesteś studentem?
+            Wybierz się na wakacje!
+        </h1>
+        <p>
+            Studenckie życie to nie tylko nauka, ale też niezapomniane przygody! Z nami zaplanujesz budżetowe, pełne
+            wrażeń wakacje – od tanich lotów po najlepsze miejsca na imprezy i relaks.
+        </p>
+    </div>
+    <div id="main-right">
+        <img src="img/zdjecie1.jpg" alt="zdjecie wakacji" class="main-photo">
+        <p><i>Zdjęcie - Hiszpania 2024 :)</i></p>
+    </div>
+</main>
+<hr>
+<article>
+    <h2>Dlaczego warto z nami podróżować ?</h2>
+    <div id="article-box">
+        <div class="article-photo-container">
+            <img src="img/zdjecie2.jpg" alt="zdjecie z wakacji" class="article-photo">
+            <p class="article-paragraph">
+                Niskie ceny – Studencki budżet? Żaden problem! Oferujemy najlepsze oferty w super cenach. 💸
+            </p>
+        </div>
+        <div class="article-photo-container">
+            <img src="img/zdjecie3.jpg" alt="zdjecie z wakacji" class="article-photo">
+            <p class="article-paragraph">
+                Niezapomniane przygody – Zwiedzanie, imprezy, aktywności – wszystko w jednym miejscu! 🌍🔥
+            </p>
+        </div>
+        <div class="article-photo-container">
+            <img src="img/zdjecie4.jpg" alt="zdjecie z wakacji" class="article-photo">
+            <p class="article-paragraph">
+                Niskie ceny – Studencki budżet? Żaden problem! Oferujemy najlepsze oferty w super cenach. 💸
+            </p>
+        </div>
+        <div class="article-photo-container">
+            <img src="img/zdjecie5.jpg" alt="zdjecie z wakacji" class="article-photo">
+            <p class="article-paragraph">
+                Ekipa jak Ty – Podróżujesz z rówieśnikami, więc dobra zabawa i nowe znajomości są gwarantowane! 🎉
+            </p>
+        </div>
+    </div>
+</article>
+<hr>
+
+<div id="offers-container">
+    <div id="inner-offers-container">
+        <h2>Przykladowe oferty!</h2>
+        <p>Po wiecej informacji przejdz na strone <b><a href="oferty.html" id="offers-odnosnik">oferty</a></b></p>
+
+        <form id="offerts-form">
+            <input type="text" id="search" placeholder="Szukaj kraju...">
+            <select id="sort">
+                <option value="rosnaco">Sortuj po cenie: rosnąco</option>
+                <option value="malejaco">Sortuj po cenie: malejąco</option>
+            </select>
+        </form>
+
+        <ul id="oferty-list">
+        </ul>
+    </div>
+</div>
+
+<hr>
+<div id="contact-container">
+    <div id="inner-contact-container">
+        <div id="upper-contact-container">
+            <h2>Skontaktuj się z nami!</h2>
+            <button class="button-contact">Kontakt</button>
+        </div>
+        <div id="lower-contact-container">
+            <h2>
+                Pozwól nam się z tobą skontaktować!
+            </h2>
+            <div class="lower-contact-form">
+                <form action="/action_page.php">
+                    <input type="email" placeholder="Email" class="contact-form-input">
+                    <input type="submit" value="Submit" class="button-contact button-send">
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<footer>
+    <p>
+        Wszelkie prawa zastrzeżone ©1991-2025 Biuro podróży NIGG
+    </p>
+</footer>
+<script src="script.js"></script>
+</body>
+
+</html>

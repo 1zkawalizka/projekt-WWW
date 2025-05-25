@@ -1,0 +1,376 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+
+body{
+    font-family: "Open Sans", sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+#middle-header ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #FFF;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#middle-header li {
+    position: relative;
+}
+
+#middle-header ul > li {
+    width: 150px;
+    height: 2em;
+    text-align: center;
+}
+
+#middle-header ul > li > a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+}
+
+#middle-header ul > li:hover > a {
+    color: rgb(41, 45, 46);
+}
+
+#middle-header ul > li > ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    background-color: #EEE;
+    min-width: 150px;
+}
+
+#middle-header ul > li:hover > ul {
+    display: block;
+}
+
+#middle-header ul > li > ul > li {
+    background-color: #EEE;
+}
+
+#middle-header ul > li > ul > li > a {
+    display: block;
+    padding: 10px;
+    border-top: 1px solid #FFF;
+    text-decoration: none;
+    color: black;
+}
+
+#middle-header ul > li > ul > li:hover {
+    background-color: #DDD;
+}
+
+#middle-header ul > li > ul > li:hover > a {
+    color: rgb(41, 45, 46);
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    font-size: 20px;
+    width: 100%;
+    position: fixed;
+    background-color: white;
+    border-bottom: 1px solid grey;
+}
+
+main{
+    display: flex;
+    padding: 50px;
+    padding-top: 100px;
+}
+
+article{
+    text-align: center;
+    padding: 15px;
+}
+
+#article-box{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+footer{
+    justify-content: space-between;
+    background-color: #1E1E1E;
+    margin: 0;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+.article-photo{
+    width: 320px;
+    height: 320px;
+    border-radius: 10px;
+}
+
+.header-logo{
+    width: 50px;
+    height: 50px;
+}
+
+.main-photo{
+    width: 100%;
+    min-width: 250px;
+}
+
+#contact-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+}
+
+#inner-contact-container{
+    background-color: #EDD9D9;
+    border-radius: 10px;
+    text-align: center;
+    padding: 0px 50px 50px 50px;
+}
+
+.menu-anchor{
+    text-decoration: none;
+    color: black;
+}
+
+.right-button,
+.left-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    width: 120px;
+    height: 45px;
+    background-color: #1E1E1E;
+    color: white;
+    border-radius: 10px;
+    border: 1px #1E1E1E solid;
+    transition: 0.2s;
+    margin: 5px;
+}
+
+#right-header{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.right-button{
+    margin-right: 25px;
+}
+
+.header-button-anchor{
+    color: white;
+    text-decoration: none;
+}
+
+.button-contact:hover{
+    transition: 0.2s;
+    background-color: #2e2d2d;
+    border: 1px #2e2d2d solid;
+    width: 310px;
+    height: 50px;
+}
+
+#main-left{
+    max-width: 50%;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+#main-left h1{
+    font-size: 46px;
+}
+
+#main-left p{
+    font-size: 23px;
+}
+
+#main-right{
+    width: 50%;
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.main-photo{
+    border-radius: 10px;
+}
+
+article h2{
+    font-size: 30px;
+}
+
+.article-photo-container{
+    width: 350px;
+    height: 500px;
+}
+
+.article-paragraph{
+    font-size: 23px;
+}
+
+#inner-contact-container h2{
+    font-size: 38px;
+}
+
+.button-contact{
+    font-size: 16px;
+    width: 300px;
+    height: 45px;
+    background-color: #1E1E1E;
+    color: white;
+    border-radius: 10px;
+    border: 1px #1E1E1E solid;
+    transition: 0.2s;
+}
+
+.button-send{
+    width: 100px;
+    transition: 0.2s;
+}
+
+.button-send:hover{
+    font-size: 16px;
+    width: 115px;
+    height: 50px;
+    background-color: #1E1E1E;
+    color: white;
+    border-radius: 10px;
+    border: 1px #1E1E1E solid;
+    transition: 0.2s;
+}
+
+.contact-form-input{
+    width: 200px;
+    height: 15px;
+    border-radius: 10px;
+    border: 0px;
+    margin-right: 5px;
+    padding: 15px;
+}
+
+hr{
+    margin: 0;
+}
+
+@media only screen and (max-width: 1000px) {
+    main{
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 0px;
+        padding-top: 100px;
+    }
+
+    #main-left{
+        width: 100%;
+        text-align: center;
+        padding-bottom: 0px;
+    }
+
+    #main-left h1{
+        font-size: 30px;
+    }
+    #main-right{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .main-photo{
+        width: 60%;
+    }
+    #inner-contact-container{
+        padding: 0px 30px 30px 30px;
+    }
+}
+
+@media only screen and (max-width: 490px) {
+    .menu-o-nas,
+    .menu-kierunki{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 540px){
+    .button-send{
+        margin-top: 15px;
+    }
+    #inner-contact-container{
+        padding: 0px 20px 20px 20px;
+    }
+    #inner-contact-container h2{
+        font-size: 20px;
+    }
+    .button-contact{
+        width: 250px;
+    }
+    .button-send{
+        width: 150px;
+    }
+    .article-photo{
+        width: 250px;
+        height: 250px;
+    }
+    .article-paragraph{
+        font-size: 20px;
+    }
+}
+
+#offers-container{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    padding: 50px;
+    text-align: center;
+    min-height: 280px;
+}
+
+#inner-offers-container ul{
+    list-style-type: none;
+}
+
+#offers-odnosnik{
+    text-decoration: none;
+}
+/*
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #212121;
+        color: #ffffffef;
+    }
+    header{
+        background-color: #212121;
+    }
+    #inner-contact-container{
+        background-color: #444444;
+    }
+    .menu-anchor{
+        color: #FFFFFF;
+    }
+
+    .left-button,
+    .right-button{
+        background-color: #444444;
+    }
+
+    .contact-form-input{
+        background-color: #363232;
+        color: white;
+    }
+  }
+  */
