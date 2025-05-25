@@ -345,7 +345,24 @@ hr{
 }
 
 #offers-odnosnik{
-    text-decoration: none;
+    text-decoration: underline;
+    color: #2e2d2d;
+}
+
+@keyframes pulsacja{
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.15);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.button-contact:hover{
+    animation: pulsacja 0.4s ease-in-out 1;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -373,3 +390,39 @@ hr{
         color: white;
     }
   }
+
+#search{
+    width: 200px;
+    height: 15px;
+    border-radius: 8px;
+    border: 0px;
+    margin-right: 5px;
+    padding: 15px;
+    background-color: #ded4d4;
+}
+
+#search::placeholder{
+    color: black;
+    font-size: 18px;
+}
+
+#oferty-list li{
+    padding: 5px;
+    font-size: 23px;
+}
+
+select {
+    margin: 5px;
+    background-color: #ded4d4;
+    color: #333;
+    font-size: 16px;
+    padding: 14px;
+    border: 1px solid #999;
+    border-radius: 8px;
+
+}
+
+select::placeholder{
+    color: black;
+    font-size: 18px;
+}
