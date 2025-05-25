@@ -78,3 +78,28 @@ input[type="email"], input[type="button"] {
         max-width: 250px;
     }
 }
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #222;
+        color: white;
+    }
+
+    .oferta1, .oferta2, .oferta3 {
+        background: #333;
+        border: 1px solid #666;
+    }
+
+    header {
+        border-bottom: 1px solid white;
+        color: white;
+    }
+    
+input[type="email"], input[type="button"] {
+    width: 100%;
+    max-width: 300px;
+    height: 40px;
+    font-size: medium;
+
+    
+}
+}
