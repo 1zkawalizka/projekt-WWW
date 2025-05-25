@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+body {
+    font-family: "Open Sans", sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    background-color: #f5f5f5;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    font-size: 20px;
+    width: 100%;
+    position: fixed;
+    background-color: white;
+    border-bottom: 1px solid grey;
+    z-index: 1000;
+}
+
+#left-header {
+    display: flex;
+    align-items: center;
+}
+
+.header-logo {
+    width: 50px;
+    height: 50px;
+}
+
+#middle-header ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #FFF;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#middle-header li {
+    position: relative;
+}
+
+#middle-header ul>li {
+    width: 150px;
+    height: 2em;
+    text-align: center;
+}
+
+#middle-header ul>li>a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+}
+
+#middle-header ul>li:hover>a {
+    color: rgb(41, 45, 46);
+}
+
+#middle-header ul>li>ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    background-color: #EEE;
+    min-width: 150px;
+}
+
+#middle-header ul>li:hover>ul {
+    display: block;
+}
+
+#middle-header ul>li>ul>li {
+    background-color: #EEE;
+}
+
+#middle-header ul>li>ul>li>a {
+    display: block;
+    padding: 10px;
+    border-top: 1px solid #FFF;
+    text-decoration: none;
+    color: black;
+}
+
+#middle-header ul>li>ul>li:hover {
+    background-color: #DDD;
+}
+
+#middle-header ul>li>ul>li:hover>a {
+    color: rgb(41, 45, 46);
+}
+
+#right-header {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.header-button-anchor {
+    color: white;
+    text-decoration: none;
+}
+
+.left-button,
+.right-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    width: 120px;
+    height: 45px;
+    background-color: #1E1E1E;
+    color: white;
+    border-radius: 10px;
+    border: 1px #1E1E1E solid;
+    transition: 0.2s;
+    margin: 5px;
+}
+
+.right-button {
+    margin-right: 25px;
+}
+
+#about-us {
+    padding-top: 100px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.about-header {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f8f9fa;
+    margin-bottom: 40px;
+}
+
+.about-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #1E1E1E;
+}
+
+.about-header p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    color: #555;
+}
+
+.team-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    padding: 0 20px 50px;
+}
+
+.team-member {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.team-member:hover {
+    transform: translateY(-10px);
+}
+
+.team-member img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-bottom: 3px solid #1E1E1E;
+    margin-bottom: 20px;
+}
+
+.team-member h3 {
+    font-size: 1.3rem;
+    margin: 0 0 5px;
+    padding: 0 20px;
+    color: #1E1E1E;
+}
+
+.position {
+    font-weight: bold;
+    color: #1E1E1E;
+    padding: 0 20px;
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+}
+
+.description {
+    padding: 0 20px;
+    color: #555;
+    line-height: 1.6;
+    flex-grow: 1;
+}
+
+footer {
+    background-color: #1E1E1E;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+@media (max-width: 768px) {
+    .about-header {
+        padding: 30px 15px;
+    }
+
+    .about-header h1 {
+        font-size: 2rem;
+    }
+
+    .about-header p {
+        font-size: 1rem;
+    }
+
+    .team-container {
+        grid-template-columns: 1fr;
+        max-width: 400px;
+        margin: 0 auto;
+        padding: 0 15px 30px;
+    }
+
+    .menu-o-nas,
+    .menu-kierunki {
+        display: none;
+    }
+
+    #middle-header ul>li {
+        width: 120px;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    #middle-header ul>li {
+        width: 130px;
+    }
+
+    .team-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
