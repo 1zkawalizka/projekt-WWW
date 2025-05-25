@@ -128,3 +128,93 @@ header {
         gap: 5px;
     }
 }
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #222;
+        color: white;
+    }
+
+    .oferta1, .oferta2, .oferta3 {
+        background: #333;
+        border: 1px solid #666;
+    }
+
+    header {
+        border-bottom: 1px solid white;
+        color: white;
+    }
+
+    .guzik:hover {
+        background-color: #444;
+        color: white;
+    }
+
+    #middle-header ul > li > a {
+        color: white;
+    }
+
+    #middle-header ul > li:hover > a {
+        color: #cfcfcf;
+    }
+
+    #middle-header ul > li > ul {
+        background-color: #444;
+    }
+
+    #middle-header ul > li > ul > li a {
+        color: white;
+    }
+
+    #middle-header ul > li > ul > li:hover a {
+        color: #cfcfcf;
+    }
+}
+
+#middle-header ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#middle-header ul > li {
+    position: relative;
+}
+
+#middle-header ul > li > a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+    transition: color 0.3s ease;
+}
+
+#middle-header ul > li:hover > a {
+    color: rgb(41, 45, 46);
+}
+
+#middle-header ul > li > ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #EEE;
+    min-width: 150px;
+}
+
+#middle-header ul > li:hover > ul {
+    display: block;
+}
+
+#middle-header ul > li > ul > li {
+    background-color: #EEE;
+}
+
+#middle-header ul > li > ul > li a {
+    color: black;
+}
+
+#middle-header ul > li > ul > li:hover a {
+    color: rgb(41, 45, 46);
+}
