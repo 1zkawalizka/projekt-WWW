@@ -82,7 +82,27 @@ header {
      aspect-ratio: 16/9;
 }
 
+@media(prefers-color-scheme: dark)
+{
+     body {
+        background-color: #222;
+        color: white;
+    }
 
+    .oferta1, .oferta2, .oferta3 {
+        background: #333;
+        border: 1px solid #666;
+    }
+
+    header {
+        border-bottom: 1px solid white;
+    }
+
+    .guzik:hover {
+        background-color: #444;
+        color: white;
+    }
+}
 
 @media screen and (max-width: 1024px) {
     .container {
