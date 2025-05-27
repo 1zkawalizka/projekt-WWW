@@ -74,6 +74,10 @@ header {
     min-height: 450px;
 }
 
+.slide {
+    flex: 0 0 100%;
+    scroll-snap-align: start;
+}
 
 .slider-items img {
     width: 100%; 
