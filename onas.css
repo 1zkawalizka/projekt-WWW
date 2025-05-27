@@ -251,3 +251,45 @@ footer {
         grid-template-columns: repeat(2, 1fr);
     }
 }
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #212121;
+        color: #ffffffef;
+    }
+
+    header {
+        background-color: #212121;
+    }
+
+    .menu-anchor {
+        color: #FFFFFF;
+    }
+
+    #middle-header ul li a{
+        color: white;
+    }
+
+    .menu-anchor {
+        background-color: #212121;
+    }
+
+    .about-header{
+        background-color: #212121;
+
+    }
+
+    .about-header h1{
+        color: white;
+    }
+
+    .about-header p{
+        color: #ece5de;
+    }
+
+    .header-button-anchor{
+        background-color: #444444;
+    }
+
+    .team-member{background-color: grey}
+}
