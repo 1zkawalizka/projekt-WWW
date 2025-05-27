@@ -1,0 +1,379 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    color: #111;
+    line-height: 1.6;
+}
+
+header {
+    background-image: url('https://ogutusafari.com.pl/img/blog-1-a.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 60px 20px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+    color: white;
+    position: relative;
+}
+
+
+header::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background-color: rgba(0, 0, 0, 0.4); 
+    z-index: 0;
+}
+
+
+header h1 {
+    position: relative;
+    z-index: 1;
+    font-size: 2.8rem;
+    margin: 0;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 1.8rem;
+}
+
+h3 {
+    margin-top: 30px;
+    color: #222;
+}
+
+ul.oferta {
+    max-width: 800px;
+    margin: 0 auto 30px auto;
+    padding: 0;
+    list-style-type: none;
+}
+
+ul.oferta li {
+    background-color: #f1f9ff;
+    margin-bottom: 10px;
+    padding: 15px 20px;
+    border-left: 5px solid #2196F3;
+    border-radius: 4px;
+}
+
+.plan {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.plan ul {
+    padding-left: 20px;
+    list-style-type: disc;
+    margin-bottom: 30px;
+}
+
+.ramka {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #f7f7f7;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+input[type="email"] {
+    width: 80%;
+    padding: 10px;
+    margin: 15px 0;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #2196F3;
+    color: white;
+    font-size: 1rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #1976D2;
+}
+.plan-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+    max-width: 1100px;
+    margin: 0 auto 60px auto;
+    padding: 0 20px;
+    align-items: flex-start;
+}
+
+.plan-text {
+    flex: 1 1 60%;
+}
+
+.plan-image {
+    flex: 1 1 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.plan-image img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+#navbar {
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    transition: top 0.3s;
+}
+
+.nav-container {
+    max-width: 1400px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+.logo {
+    height: 30px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 50px;
+    margin: 0 auto;
+    padding: 0;
+    flex: 1;
+    justify-content: center;
+}
+
+.nav-links li {
+    position: relative;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    font-size: 16px;
+    color: #111;
+    transition: color 0.2s;
+}
+
+.nav-links li a:hover {
+    color: #2196F3;
+}
+
+.nav-links li ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: white;
+    list-style: none;
+    padding: 10px 0;
+    margin: 0;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 4px;
+}
+
+.nav-links li:hover ul {
+    display: block;
+}
+
+.nav-links li ul li a {
+    display: block;
+    padding: 10px 20px;
+    white-space: nowrap;
+}
+
+.nav-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.nav-buttons {
+    display: flex;
+    gap: 12px;
+}
+
+.header-button-anchor {
+    background-color: #1f1f1f;
+    color: white;
+    text-decoration: none;
+    padding: 10px 18px;
+    border-radius: 12px;
+    font-size: 15px;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+}
+
+.header-button-anchor:hover {
+    background-color: #000000;
+}
+#animalList,
+#animalList li {
+    max-width: 800px;
+    margin: 0 auto 15px auto;
+    padding: 0;
+    list-style: none;
+    font-size: 1rem;
+    color: #111;
+}
+
+#animalList li {
+    background-color: #f1f9ff;
+    margin-bottom: 8px;
+    padding: 12px 18px;
+    border-left: 5px solid #2196F3;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+#animalList li:hover {
+    background-color: #d0e7ff;
+    cursor: default;
+}
+
+#animalSearch, #animalFilter {
+    max-width: 250px;
+    font-size: 1rem;
+    padding: 8px 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+    margin: 0 10px 20px 0;
+    transition: border-color 0.3s ease;
+}
+
+#animalSearch:focus, #animalFilter:focus {
+    outline: none;
+    border-color: #2196F3;
+    box-shadow: 0 0 5px rgba(33,150,243,0.5);
+}
+
+
+#animalSearch, #animalFilter {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+
+h2 {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 1.8rem;
+    color: #222;
+}
+
+
+@media (max-width: 600px) {
+    #animalSearch, #animalFilter {
+        max-width: 100%;
+        margin-bottom: 10px;
+        display: block;
+    }
+    #animalList, #animalList li {
+        max-width: 100%;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #111;
+        color: #eee;
+    }
+
+    header {
+        color: white;
+    }
+
+    header::before {
+        background-color: rgba(0, 0, 0, 0.6);
+    }
+
+    h2, h3 {
+        color: #ddd;
+    }
+
+    ul.oferta li,
+    #animalList li {
+        background-color: #1e1e1e;
+        color: #eee;
+        border-left-color: #64b5f6;
+    }
+
+    #navbar {
+        background-color: #1c1c1c;
+        box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1);
+    }
+
+    .nav-links li a {
+        color: #eee;
+    }
+
+    .nav-links li ul {
+        background-color: #2a2a2a;
+    }
+
+    .nav-links li ul li a {
+        color: #eee;
+    }
+
+    .header-button-anchor {
+        background-color: #444;
+        color: white;
+    }
+
+    .header-button-anchor:hover {
+        background-color: #666;
+    }
+
+    .ramka {
+        background-color: #222;
+        box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
+    }
+
+    input[type="email"],
+    #animalSearch,
+    #animalFilter {
+        background-color: #2a2a2a;
+        color: #eee;
+        border: 1px solid #555;
+    }
+
+    input[type="submit"] {
+        background-color: #64b5f6;
+        color: #111;
+    }
+
+    input[type="submit"]:hover {
+        background-color: #42a5f5;
+    }
+
+    #animalList li:hover {
+        background-color: #333;
+    }
+}
