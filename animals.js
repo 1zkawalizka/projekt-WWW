@@ -1,49 +1,46 @@
-let allAnimals = [];
+document.addEventListener("DOMContentLoaded", () => {
+  const animalList = document.getElementById("animalList");
+  const animalFilter = document.getElementById("animalFilter");
+  const animalSearch = document.getElementById("animalSearch");
 
-function displayAnimals(animals) {
-  const list = document.getElementById('animalList');
-  list.innerHTML = '';
-
-  animals.forEach(animal => {
-    const li = document.createElement('li');
-    li.textContent = `${animal.name} (${animal.type})`;
-    list.appendChild(li);
-  });
-}
-
-function filterAndDisplay() {
-  const filterValue = document.getElementById('animalFilter').value.toLowerCase();
-  const searchValue = document.getElementById('animalSearch').value.toLowerCase();
-
-  let filtered = allAnimals;
-
-  
-  if (filterValue !== 'all') {
-    filtered = filtered.filter(animal => animal.type.toLowerCase() === filterValue);
-  }
+  let animalsData = [];
 
  
-  if (searchValue) {
-    filtered = filtered.filter(animal => animal.name.toLowerCase().includes(searchValue));
+  function displayAnimals() {
+    const filter = animalFilter.value;
+    const search = animalSearch.value.toLowerCase();
+
+    
+    const filtered = animalsData.filter(animal => {
+      const matchesType = filter === "all" || animal.type === filter;
+      const matchesSearch = animal.name.toLowerCase().includes(search);
+      return matchesType && matchesSearch;
+    });
+
+    
+    animalList.innerHTML = "";
+
+    
+    filtered.forEach(animal => {
+      const li = document.createElement("li");
+      li.textContent = animal.name;
+      animalList.appendChild(li);
+    });
   }
 
-  displayAnimals(filtered);
-}
+  
+  fetch("db.json")
+    .then(response => response.json())
+    .then(data => {
+      animalsData = data.animals;
+      displayAnimals();
+    })
+    .catch(err => {
+      animalList.innerHTML = "<li>Nie udało się załadować danych.</li>";
+      console.error(err);
+    });
 
-
-fetch('http://localhost:3000/animals')
-  .then(response => {
-    if (!response.ok) throw new Error('Nie udało się wczytać danych');
-    return response.json();
-  })
-  .then(data => {
-    allAnimals = data;
-    displayAnimals(allAnimals);
-  })
-  .catch(error => {
-    console.error('Błąd:', error);
-  });
-
-
-document.getElementById('animalFilter').addEventListener('change', filterAndDisplay);
-document.getElementById('animalSearch').addEventListener('input', filterAndDisplay);
+  
+  animalFilter.addEventListener("change", displayAnimals);
+  animalSearch.addEventListener("input", displayAnimals);
+});
