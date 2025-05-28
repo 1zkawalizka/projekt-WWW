@@ -291,5 +291,15 @@ footer {
         background-color: #444444;
     }
 
-    .team-member{background-color: grey}
+    .team-member{
+        background-color: #423636
+    }
+
+    .team-member h3{
+        color: white;
+    }
+
+    .description{
+        color: white;
+    }
 }
