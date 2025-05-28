@@ -1,5 +1,5 @@
 body {
-    background-color: #D9D9D9;
+    background-color: #FFF;
     color: black;
     font-size: medium;
     font-family: Arial, Helvetica, sans-serif;
@@ -115,6 +115,10 @@ input[type="button"]:hover {
     color: aquamarine;
     background-color: rgba(110, 74, 116, 0.74);
     transform: scale(1.05);
+}
+
+#middle-header ul li .menu-anchor{
+    font-size: 24px;
 }
 
 .zdjecia {
@@ -239,4 +243,25 @@ input[type="button"]:hover {
 
 #middle-header ul > li > ul > li:hover a {
     color: rgb(41, 45, 46);
+}
+
+.header-logo{
+    height: 50px;
+    width: 50px;
+}
+
+.header-button-anchor{
+    text-decoration: none;
+    font-size: 24px;
+    color: white;
+    background-color: grey;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+@media (prefers-color-scheme: dark) {
+    #middle-header ul li .menu-anchor{
+        color: white;
+        font-size: 24px;
+    }
 }
